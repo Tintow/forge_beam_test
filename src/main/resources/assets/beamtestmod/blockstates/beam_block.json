@@ -1,0 +1,5 @@
+{
+  "variants": {
+    "": {"model": "beamtestmod:block/beam_block"}
+  }
+}
