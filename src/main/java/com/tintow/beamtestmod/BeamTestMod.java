@@ -3,7 +3,7 @@ package com.tintow.beamtestmod;
 import com.tintow.beamtestmod.block.ModBlocks;
 import com.tintow.beamtestmod.blockentities.ModBlockEntities;
 import com.tintow.beamtestmod.item.ModItems;
-import com.tintow.beamtestmod.renderer.BeamRenderer;
+import com.tintow.beamtestmod.renderer.DelegatedBeamRenderer;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -52,7 +52,7 @@ public class BeamTestMod
 
     private void clientSetup(final FMLClientSetupEvent event){
         event.enqueueWork(()->{
-            BeamRenderer.register();
+            DelegatedBeamRenderer.register();
         });
     }
 
